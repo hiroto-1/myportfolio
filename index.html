@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <!--jQuery-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/skill.bars.jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".skillbar").skillBars({
+          from: 0,
+          speed: 4000,
+          interval: 100,
+          decimals: 0,
+        });
+      });
+    </script>
+  </head>
+  <body class="js_body">
+    <!--Loading-->
+    <div class="loading js_loading">
+      <p class="loading_txt">Hiroto Kodama</p>
+    </div>
+
+    <!--header-->
+    <header class="l_header">
+      <div class="l_header-inner l_header-innerbar">
+        <p class="l_header-name">HIROTO KODAMA</p>
+
+        <nav class="l_header-hamburger js_nav">
+          <ul class="l_header-hamburger_list">
+            <li class="l_header-hamburger_demo">
+              <a href="./index.html#Profile" class="l_header_link">Profile</a>
+            </li>
+            <li class="l_header-hamburger_demo">
+              <a href="./index.html#Skill" class="l_header_link">Skill</a>
+            </li>
+            <li class="l_header-hamburger_demo">
+              <a href="./index.html#Work" class="l_header_link">Work</a>
+            </li>
+            <li class="l_header-hamburger_demo">
+              <a href="./index.html#Contact" class="l_header_link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--hamburger-->
+        <button class="m_hamburger js_hamburger">
+          <span class="m_hamburger_bar js_hamburger_bar"></span>
+          <span class="m_hamburger_bar js_hamburger_bar"></span>
+          <span class="m_hamburger_bar js_hamburger_bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!--page-top-->
+    <div class="m_page-top js_page">
+      <a href="#">↑</a>
+    </div>
+
+    <div class="top_img_demo">
+      <div class="top_box">
+        <p class="top_txt">welcome to my portfolio</p>
+      </div>
+    </div>
+
+    <main class="top_main">
+      <!--profile-->
+      <section class="top_myprof">
+        <div class="l_contents js_prof">
+          <h2 class="m_title">
+            <span class="m_title-profile" id="Profile"> MY PROFILE </span>
+          </h2>
+          <div class="top_profile">
+            <div class="m_title-prof-img js_prof-trigger">
+              <img
+                src="img/human1-2.jpg"
+                class="m_title-prof-radius"
+                alt="human1-1"
+              />
+            </div>
+            <ul class="top_profile-list js_prof-trigger">
+              <li class="top_profile-txt">出身地:</li>
+              <div class="top_profile-from">大阪府高槻市</div>
+              <li class="top_profile-txt">大学:</li>
+              <div class="top_profile-from">
+                龍谷大学理工学部機械システム工学科
+              </div>
+              <li class="top_profile-txt">職業:</li>
+              <div class="top_profile-from">
+                機械設計エンジニア(技術派遣)
+                <p class="top_profile-ex">
+                  航空機系の設計開発補助・人型ロボットの設計開発補助業務・自動車部品メーカーの品質保証業務を経験
+                </p>
+              </div>
+              <li class="top_profile-txt">趣味:</li>
+              <div class="top_profile_from">
+                音楽鑑賞(邦楽ロック)/ライブ参戦/卓球/お笑い
+              </div>
+              <li class="top_profile-txt">コメント:</li>
+              <p class="top_profile-ex">
+                私がプログラミングスクールで学んだことはWEB
+                サイトの仕組みやデザインなどです。独学では学べなかったことが知識として得られたので今後はそれらを
+                活かせるような思いやりのあるWEBサイト制作に尽力します。
+              </p>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--skill-->
+      <section class="skill js_skill" id="Skill">
+        <h1 class="skill_ttl">SKILL</h1>
+        <p class="skill_sub">〜学んできた技術〜</p>
+        <ul class="skill_list js_skill-trigger">
+          <li class="skill_list-title skill_list-markup">
+            HTML/CSS
+            <div class="skillbar skillbar-process" data-percent="80">
+              <div class="skillbar-title">HTML/CSS(1年〜)</div>
+              <div class="skillbar-bar"></div>
+              <div class="skillbar-percent"></div>
+            </div>
+          </li>
+          <li class="skill_list-title skill_list-pro">
+            JavaScript
+            <div class="skillbar skillbar-process" data-percent="80">
+              <div class="skillbar-title">JavaScript(1年〜)</div>
+              <div class="skillbar-bar"></div>
+              <div class="skillbar-percent"></div>
+            </div>
+          </li>
+          <li class="skill_list-title skill_list-des">
+            WebDesign
+            <div class="skillbar skillbar-process" data-percent="80">
+              <div class="skillbar-title">Adobe XD(4ヶ月〜)</div>
+              <div class="skillbar-bar"></div>
+              <div class="skillbar-percent"></div>
+            </div>
+          </li>
+          <li class="skill_list-title skill_list-wp">
+            WordPress
+            <div class="skillbar skillbar-process" data-percent="80">
+              <div class="skillbar-title">WordPress(4ヶ月〜)</div>
+              <div class="skillbar-bar"></div>
+              <div class="skillbar-percent"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!--work-->
+      <section class="work" id="Work">
+        <h1 class="work_ttl">WORK</h1>
+        <p class="work_sub">〜制作実績〜</p>
+        <div class="work_wrapper">
+          <ul class="work_list">
+            <li class="work_sample">
+              <p class="work_txt">〜coming soon〜</p>
+              <img src="img/music_1.jpg" class="work_demo" alt="実績1" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--contact-->
+      <section class="contact" id="Contact">
+        <h1 class="contact_ttl">CONTACT</h1>
+        <div class="contact_inner">
+          <div class="contact_form">
+            <p class="contact_text">
+              お客様からのご質問をフォームにて受け付けております。<br />入力内容を確認の上、送信お願い致します。
+            </p>
+            <div class="contact_form-item">
+              <p class="contact_description">
+                氏名 <span class="contact-mark">必須</span>
+              </p>
+              <input
+                type="text"
+                class="contact_form-input"
+                placeholder="*Your Name"
+              />
+            </div>
+          </div>
+          <div class="contact_form">
+            <div class="contact_form-item">
+              <p class="contact_description">
+                メールアドレス<span class="contact-mark">必須</span>
+              </p>
+              <input
+                type="text"
+                class="contact_form-input"
+                placeholder="*Info@example.com"
+              />
+            </div>
+          </div>
+          <div class="contact_form">
+            <div class="contact_form-item">
+              <p class="contact_description">企業名</p>
+              <input
+                type="text"
+                class="contact_form-input"
+                placeholder="*Sample,Inc"
+              />
+            </div>
+          </div>
+          <div class="contact_form">
+            <div class="contact_form-item">
+              <p class="contact_description">
+                お問い合わせ内容<span class="contact-mark">必須</span>
+              </p>
+              <textarea
+                class="contact_textarea"
+                placeholder="*Message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="contact_form-btn">
+            <a href="#" class="m_btn"> 送信 </a>
+          </div>
+        </div>
+      </section>
+
+      <!--parallax-->
+      <div class="scrollbox_1"></div>
+      <div class="parallax_demo parallax_size">
+        Thank you for watching my portfolio
+      </div>
+      <div class="scrollbox_2"></div>
+
+      <!--footer-->
+      <footer class="l_footer">
+        <p class="l_footer-copyright">
+          <small class="l_footer-copyright_txt"
+            >&copy; 2022 Hiroto Kodama</small
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
