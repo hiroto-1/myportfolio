@@ -34,7 +34,6 @@ $(function () {
       },
       500
     );
-    $("body,html").animate({ scrollTop: 0 }, 500);
   });
   /*---------- gsap scrollTrigger ----------*/
   gsap.fromTo(
