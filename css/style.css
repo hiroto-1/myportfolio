@@ -378,6 +378,7 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  left: 30px;
   width: 35px;
   height: 35px;
   background: var(--white-color);
@@ -723,6 +724,7 @@ body {
 @media screen and (min-width: 1080px) {
   .js_nav {
     pointer-events: none;
+    pointer-events: auto;
   }
 }
 
