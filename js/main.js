@@ -32,7 +32,7 @@ $(function () {
       {
         scrollTop: 0,
       },
-      500
+      00
     );
   });
   /*---------- gsap scrollTrigger ----------*/
